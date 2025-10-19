@@ -30,10 +30,10 @@ Um aplicativo de linha de comando simples para cadastrar despesas, listá-las e 
 
 ```bash
 # Windows (PowerShell ou CMD)
-python exercicio05.py
+python app.py
 
 # macOS / Linux
-python3 exercicio05.py
+python3 app.py
 ```
 
 ---
