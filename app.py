@@ -28,7 +28,11 @@ def cadastrar_despesas():
 
     # Pede o valor da despesa e converte para float (número com casas decimais).
     # Se o usuário digitar algo que não é número, isso gera ValueError.
-    valor_da_despesa = float(input('Valor da despesa: '))
+    try:
+        valor_da_despesa = float(input('Valor da despesa: '))
+    except ValueError:
+        print('Digite apenas valores numéricos!')
+        voltar_ao_menu_principal()
 
     # Monta um dicionário com as informações da despesa.
     dados_da_despesa = {'nome': nome_da_despesa, 'valor': valor_da_despesa}
